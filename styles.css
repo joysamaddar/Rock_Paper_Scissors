@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: radial-gradient(circle, #1f3756, #141539);
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.scoreboard {
+  margin: 2rem auto;
+  width: 60%;
+  border: 2px solid #606e85;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 2.5rem;
+}
+
+.score {
+  background: white;
+  padding: 0rem 3rem;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.score > h1 {
+  margin: 1.5rem 0 0rem 0;
+  text-transform: uppercase;
+  color: #2a46c0;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.score-nr {
+  margin: 0rem 0 1.5rem 0;
+  color: #3b4363;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.gamearea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainarea {
+  position: relative;
+  margin-top: 10rem;
+}
+
+.circle {
+  background: #e0e0e0;
+  border-radius: 50%;
+  padding: 3.5rem;
+  position: absolute;
+  cursor: pointer;
+}
+
+.circle1 {
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-shadow: 0px 0px 1px 2rem #4865f4;
+          box-shadow: 0px 0px 1px 2rem #4865f4;
+}
+
+.circle2 {
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  -webkit-box-shadow: 0px 0px 1px 2rem #ec9e0e;
+          box-shadow: 0px 0px 1px 2rem #ec9e0e;
+}
+
+.circle3 {
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  -webkit-box-shadow: 0px 0px 1px 2rem #dc2e4e;
+          box-shadow: 0px 0px 1px 2rem #dc2e4e;
+}
+
+.maingame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.maingame h1 {
+  margin: 2rem 0 5rem 0;
+  text-align: center;
+  color: white;
+}
+
+.maingame_l {
+  margin-right: 1rem;
+}
+
+.maingame_r {
+  margin-left: 1rem;
+}
+
+.circlel {
+  -webkit-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+  background: #e0e0e0;
+  border-radius: 50%;
+  padding: 3.5rem;
+}
+
+.circler {
+  -webkit-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+  background: #e0e0e0;
+  border-radius: 50%;
+  padding: 3.5rem;
+}
+
+.blocked {
+  width: 11rem;
+  height: 11rem;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.26);
+}
+
+.maingame_mid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 3rem 2rem 0 2rem;
+  font-weight: 600;
+  overflow: hidden;
+}
+
+.maingame_mid h1 {
+  color: white;
+  font-size: 3rem;
+  margin: 0 0 1rem 0;
+}
+
+.maingame_mid .retry-btn {
+  padding: 1rem 3rem;
+  color: #dc2e4e;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 0.5rem;
+}
+/*# sourceMappingURL=styles.css.map */
