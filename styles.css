@@ -8,6 +8,7 @@
 body {
   background-image: radial-gradient(circle, #1f3756, #141539);
   font-family: "Barlow Semi Condensed", sans-serif;
+  overflow-x: hidden;
 }
 
 .scoreboard {
@@ -372,10 +373,6 @@ body {
   .maingame_r h1 {
     margin-left: 0;
     font-size: 1.3rem;
-  }
-  .circlel {
-    -webkit-transform: translate(-25%, 0%);
-            transform: translate(-25%, 0%);
   }
   .circler {
     -webkit-transform: translate(-5%, 0%);
