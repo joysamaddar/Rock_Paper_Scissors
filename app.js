@@ -57,7 +57,7 @@ circles.forEach((circle) => {
       <h1>YOU PICKED</h1>
       <img
       src="./img/icon${ourPick}.svg"
-      class="circlel circle${ourPick}")}"
+      class="${result == "YOU WIN" ? "winner" : ""} circlel circle${ourPick}")}"
     />`;
 
       maingame_r.innerHTML = `
@@ -74,7 +74,9 @@ circles.forEach((circle) => {
         <h1>THE HOUSE PICKED</h1>
         <img
         src="./img/icon${housePick}.svg"
-        class="circler circle${housePick}")}"
+        class="${
+          result == "YOU LOSE" ? "winner" : ""
+        } circler circle${housePick}")}"
       />`;
         setTimeout(() => {
           scoreboard.innerText = score;
