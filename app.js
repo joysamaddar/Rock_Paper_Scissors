@@ -2,7 +2,17 @@ const circles = document.querySelectorAll(".circle");
 const mainarea = document.querySelector(".mainarea");
 const gamearea = document.querySelector(".gamearea");
 const scoreboard = document.querySelector(".score-nr");
+const rules_btn = document.querySelector(".rules-btn");
+const close_btn = document.querySelector(".close-btn");
+const rules = document.querySelector(".rules");
+const overlay = document.querySelector(".overlay");
 let score = 0;
+if (localStorage.getItem("score")) {
+  score = localStorage.getItem("score");
+  scoreboard.innerText = score;
+} else {
+  localStorage.setItem("score", score);
+}
 
 circles.forEach((circle) => {
   circle.addEventListener("click", (e) => {
@@ -41,6 +51,7 @@ circles.forEach((circle) => {
         result = "DRAW";
       }
     }
+    localStorage.setItem("score", score);
     gsap.to(e.target.parentElement, { opacity: 0, duration: 0.5 });
     setTimeout(() => {
       mainarea.style.display = "none";
@@ -99,4 +110,19 @@ circles.forEach((circle) => {
       }, 500);
     }, 500);
   });
+});
+
+rules_btn.addEventListener("click", () => {
+  rules.style.display = "block";
+  overlay.style.display = "block";
+});
+
+overlay.addEventListener("click", () => {
+  rules.style.display = "none";
+  overlay.style.display = "none";
+});
+
+close_btn.addEventListener("click", () => {
+  rules.style.display = "none";
+  overlay.style.display = "none";
 });
